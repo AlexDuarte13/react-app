@@ -1,0 +1,61 @@
+
+  .linhasup{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .linha{
+    display: inline;
+    margin: 40px;
+    justify-content: space-around;
+  }
+  
+  .h1{
+    text-align: center;
+  }
+
+  .btn:hover{
+    background-color: #4195ef;
+  }
+
+  .bt-vistorias {
+    width: 100px !important;
+    height: 40px  !important;
+  }
+
+  .pagination {
+      margin-top: 1px;
+  }
+
+  .pagination li {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    padding: 1px 1px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+
+  .pagination li.active {
+    background-color: #0099FF;
+    color: white;
+    border: 1px solid #0099FF;
+  }
+
+  .pagination a {
+      width: 60px;
+      height: 40px;
+      color: black;
+  }
+
+  .pagination ul {
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  .mensagem-resultado-vazio {
+    padding-top: 50px;
+  }

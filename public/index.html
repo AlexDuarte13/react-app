@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Meta tags Obrigatórias -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="%PUBLIC_URL%/img/logo-ico.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="logo192.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+      <!--manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/docs.min.css" rel="stylesheet">
+  <link href="css/bradseg_icons.css" rel="stylesheet">
+
+  <!-- Estilo CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <!-- Datepicker -->
+  <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+  <!-- Icons fontawesome -->
+  <link href="/libs/fontawesome-free-5.9.0-web/css/fontawesome.css" rel="stylesheet">
+  <link href="libs/fontawesome-free-5.9.0-web/css/brands.css" rel="stylesheet">
+  <link href="libs/fontawesome-free-5.9.0-web/css/solid.css" rel="stylesheet">
+
+
+
+  <title>Ebix Insurance Platform - Demo</title>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+  <div id="root"></div>
+
+</body>
+<!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="js/offcanvas.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    $(".input-login").each(function () {
+      if ($(this).val() != "") {
+        $(this).parent().addClass("animation");
+      }
+    });
+  });
+
+  //Add animation when input is focused
+  $(".login-input").focus(function () {
+    $(this).parent().addClass("animation animation-color");
+  });
+
+  //Remove animation(s) when input is no longer focused
+  $(".login-input").focusout(function () {
+    if ($(this).val() === "")
+      $(this).parent().removeClass("animation");
+    $(this).parent().removeClass("animation-color");
+  })
+</script>
+<script>
+  // Máscara formato data no campo date 99/99/9999
+  function mascaraData(campo, e) {
+    var kC = (document.all) ? event.keyCode : e.keyCode;
+    var data = campo.value;
+    if (kC != 8 && kC != 46) {
+      if (data.length == 2) {
+        campo.value = data += '/';
+      } else if (data.length == 5) {
+        campo.value = data += '/';
+      } else
+        campo.value = data;
+    }
+  }
+</script>
+
+<script>
+  $(document).ready(function () {
+    $("li.menu-etapas").prev().removeClass("animation-to-right");
+    $("li.menu-etapas").next().removeClass("animation-to-right");
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $("button.next").click(function () {
+      $(".tab-pane").addClass("animation-to-left");
+      $(".tab-pane").removeClass("animation-to-right");
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $("button.prev").click(function () {
+      $(".tab-pane").addClass("animation-to-right");
+      $(".tab-pane").removeClass("animation-to-left");
+    });
+  });
+</script>
+
+<!-- Scripts NAVTABS -->
+<script type="text/javascript">
+  // script for tab steps
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var href = $(e.target).attr('href');
+    var $curr = $(".process-model  a[href='" + href + "']").parent();
+
+    $('.process-model li').removeClass();
+
+    $curr.addClass("active");
+    $curr.prevAll().addClass("visited");
+  });
+        // end  script for tab steps
+</script>
+
+<script type="text/javascript">
+  (function ($) {
+    'use strict';
+    $(document).on('show.bs.tab', '.nav-tabs-responsive [data-toggle="tab"]', function (e) {
+      var $target = $(e.target);
+      var $tabs = $target.closest('.nav-tabs-responsive');
+      var $current = $target.closest('li');
+      var $parent = $current.closest('li.dropdown');
+      $current = $parent.length > 0 ? $parent : $current;
+      var $next = $current.next();
+      var $prev = $current.prev();
+      var updateDropdownMenu = function ($el, position) {
+        $el
+          .find('.dropdown-menu')
+          .removeClass('pull-xs-left pull-xs-center pull-xs-right')
+          .addClass('pull-xs-' + position);
+      };
+
+      $tabs.find('>li').removeClass('next prev');
+      $prev.addClass('prev');
+      $next.addClass('next');
+
+      updateDropdownMenu($prev, 'left');
+      updateDropdownMenu($current, 'center');
+      updateDropdownMenu($next, 'right');
+    });
+
+  })(jQuery);
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    /*disable non active tabs
+    $('.nav li').not('.active').addClass('disabled');
+    $('.nav li').not('.active').find('a').removeAttr("data-toggle");*/
+
+    $('button.next').click(function () {
+      /*enable next tab*/
+      $('.nav li.active').next('li').removeClass('disabled');
+      $('.nav li.active').next('li').find('a').attr("data-toggle", "tab").trigger("click");
+    });
+
+    $('button.prev').click(function () {
+      $('.nav li.active').prev('li').find('a').trigger("click");
+    });
+  });
+</script>
+<!-- FIM Scripts NAVTABS -->
+
+<!-- Script Toogle -->
+<script>
+  function toggleFunction(x) {
+    x.classList.toggle("change");
+  }
+</script>
+<!-- Script Tooltip -->
+<script>
+  jQuery(function () {
+    jQuery('[data-toggle="tooltip"]').tooltip();
+  })
+</script>
+<!-- Script Popover -->
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+
+  $("[data-toggle=popover]")
+    .popover({ html: true })
+</script>
+<!-- Script carregar fotos -->
+<script>
+  function getFile() {
+    document.getElementById("upfile").click();
+  }
+
+  function sub(obj) {
+    var file = obj.value;
+    var fileName = file.split("\\");
+    document.getElementById("carregarImg").innerHTML = fileName[fileName.length - 1];
+    document.myForm.submit();
+    event.preventDefault();
+  }
+</script>
+
+<!-- Script Datepicker-->
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.pt-BR.js" charset="UTF-8"></script>
+<script type="text/javascript">
+  $('.form_date').datetimepicker({
+    language: 'pt-BR',
+    autoclose: 1,
+    minView: 2,
+    format: "dd/mm/yyyy"
+  });
+</script>
+<script type="text/javascript">
+  // Máscara formato data no campo date 99/99/9999
+  function mascaraData(campo, e) {
+    var kC = (document.all) ? event.keyCode : e.keyCode;
+    var data = campo.value;
+    if (kC != 8 && kC != 46) {
+      if (data.length == 2) {
+        campo.value = data += '/';
+      } else if (data.length == 5) {
+        campo.value = data += '/';
+      } else
+        campo.value = data;
+    }
+  }
+</script>
+<!-- Script display none box-item form select -->
+<script>
+  $(document).ready(function () {
+    $(".add-mais").click(function () {
+      // $(".box-item").addClass("display-none-box");
+      $(".box-item").removeClass("display-none-box");
+    });
+  });
+</script>
+
+</body>
+
+</html>

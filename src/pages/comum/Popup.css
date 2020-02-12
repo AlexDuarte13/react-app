@@ -1,0 +1,114 @@
+/* @media (min-width: 993px)
+.modal-content {
+    width: 900px;
+} */
+.popup-modal {
+    z-index: 3;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: block;
+}
+
+.popup-modal-large {
+    width: 80% !important;
+}
+
+.popup-modal-medium {
+    width: 50% !important;
+}
+
+.popup-modal-small {
+    width: 30% !important;
+}
+    
+.popup-modal-content {
+    margin: auto;
+    background-color: #fff;
+    padding: 0;
+    outline: 0;
+}
+    
+.popup-container {
+    padding: 0.01em 16px;
+    word-wrap: break-word;
+}
+    
+.popup-display-container {
+    position: relative;
+}
+      
+.popup-card-4 {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+    
+.popup-animate-top {
+    position: relative;
+    animation: animatetop 0.4s;
+}
+    
+.popup-xlarge {
+    font-size: 24px!important;
+}
+    
+.popup-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+    
+.popup-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+    
+.popup-container h2 {
+    font-size: 32px;
+}
+    
+.popup-container h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+    
+.popup-container p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+
+.popup-btn-open {
+    display: none;
+}
+
+.popup-type-error p {
+    color: #dc3545 !important;
+}
+
+.popup-type-success p {
+    color:#28a745 !important
+}
+
+.popup-type-warning p {
+    color: #ffc107 !important
+}
+
+.popup-type-info p {
+    color: #17a2b8 !important;
+}

@@ -1,0 +1,29 @@
+.easi-menu-nav, .easi-menu-nav-item {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    text-align: center !important;
+}
+
+.easi-menu-nav-item {
+    max-width: 25%;
+    margin-top: 20px;
+    
+}
+
+.easi-menu-nav {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 75%;
+    z-index: 3;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #404040;
+    background-color: #f4f4f6;
+}
+
+.easi-menu-nav-link.nav-link:hover {
+    color: #404040;
+    background-color: #f4f4f6;
+}

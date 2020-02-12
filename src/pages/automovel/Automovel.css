@@ -1,0 +1,47 @@
+.linhasup{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+.classDaFoto{
+    height: 0px;
+    width: 0px; 
+    /* overflow:hidden; */
+  }
+
+  label.especial{
+    width: 200px;
+  }
+
+  .ajax-loadercentro {
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height:100%;
+  }
+
+  .ajax-loadercentro i{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ajax-loader {
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    z-index:  +100!important;
+    width: 100%;
+    height:100%;
+    margin-top: 0;
+  }
+  
+  .ajax-loader img {
+    position: relative;
+    top:50%;
+    left:50%;
+  }

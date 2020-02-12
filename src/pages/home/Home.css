@@ -1,0 +1,95 @@
+.loginBody {
+  width: 100%;
+  background: url(./bglogin.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
+
+.ajusteTamanho {
+  width: 400px;
+  margin: auto;
+  height: 100vh;
+  padding-top: 200px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background: url(./bglogin.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
+
+.login>div {
+  font-size: 17px;
+  position: absolute;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar:before, .bar:after {
+  background: transparent;
+}
+
+.login .group {
+  margin: 40px 0;
+}
+
+.login .group label {
+  color: #FFF;
+  font-size: 17px;
+}
+
+.login .group label img {
+  margin: 0 7px 3px 0;
+}
+
+.login .group input {
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+  font-size: 17px;
+}
+
+.login button {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 100px;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 17px;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.login button:hover {
+  background-color: rgba(65, 149, 239, 0.5) !important;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.app-messages {
+  position: static !important; 
+  margin-top: 25px !important;
+  background-color: rgba(30, 143, 255, 0.5) !important;
+  width: 100% !important;
+  text-align: center;
+  color: #FFF;
+  font-size: 22px !important;
+}
+
+.app-messages ul {
+  list-style: none;
+}

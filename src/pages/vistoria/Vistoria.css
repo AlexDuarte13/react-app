@@ -1,0 +1,16 @@
+
+  .linhasup{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .linha{
+    display: inline;
+    margin: 40px;
+    justify-content: space-around;
+  }
+  
+  .h1{
+    text-align: center;
+  }
